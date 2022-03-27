@@ -1,3 +1,10 @@
+:root{
+  --color-primario:rgba(0, 0, 0);
+  --color-secundario:#4a85d2;
+  --color-letras:white;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +17,7 @@ body{
 }
 
 a, li{
-  color: white;
+  color: var(--color-letras);
   text-decoration: none;
   list-style: none;
   font-weight: bold;
@@ -18,7 +25,7 @@ a, li{
   letter-spacing: 1.5px;
 }
 header{
-  background: rgba(0, 0, 0, 0.904);
+  background: var(--color-primario);
   display: flex;
   justify-content: center;
   padding: .5rem 2rem;
@@ -34,17 +41,17 @@ header{
   margin-right: 1.5rem;
 }
 .nav-menu a:hover{
-  color: #4a85d2;
+  color:var(--color-secundario);
 }
 .inicio a:last-child{
-  background-color: #4a85d2;
-  border: 2px solid #4a85d2;
+  background-color: var(--color-secundario);
+  border: 2px solid var(--color-secundario);
   padding: .25rem .75rem;
   border-radius: .2rem;
 }
 .inicio a:last-child:hover{
   background: transparent;
-  border: 2px solid #4a85d2;
+  border: 2px solid var(--color-secundario);
 }
 
 .menu-icon{
@@ -58,12 +65,12 @@ header{
 
 .box {
     width: 500px;
-    background: rgb(0, 0, 0);
+    background:var(--color-primario);
     padding: 20px;
     text-align: center;
     margin: 0 auto;
     margin-top: 4%;
-    color: white;
+    color:var(--color-letras);
     
     border-radius: 15px;
     box-shadow: 7px 13px 37px black;
@@ -103,7 +110,7 @@ header{
     display: inline-block;
   }
   .box ul li a {
-    color: white;
+    color: var(--color-letras);
     font-size: 45px;
     padding: 10px 5px;
     transition: all .5s ease-in-out;
